@@ -2,6 +2,8 @@
 
 2. This repo also provides a GLCIC model [in pytorch format], pretrained on places2 dataset 
 
+3. After you download this repo, follow the script below
+
 ``` bash
 # clone the original repo
 git clone https://github.com/akmtn/pytorch-siggraph2017-inpainting
