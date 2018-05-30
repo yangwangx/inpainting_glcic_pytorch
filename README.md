@@ -1,3 +1,7 @@
+1. This repo provides a pytorch definition of the [GLCIC model](http://hi.cs.waseda.ac.jp/%7Eiizuka/projects/completion/data/completion_sig2017.pdf)
+
+2. This repo also provides a GLCIC model [in pytorch format], pretrained on places2 dataset 
+
 ``` bash
 # clone the original repo
 git clone https://github.com/akmtn/pytorch-siggraph2017-inpainting
