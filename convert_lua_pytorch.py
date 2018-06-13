@@ -5,7 +5,7 @@ from torch.legacy.nn.Sequential import Sequential as old_Sequential
 from torch.utils.serialization import load_lua
 from glcic import glcic
 
-A = load_lua('completionnet_places2.t7').model
+A = load_lua('completionnet_places2.t7', long_size=8).model
 B = glcic(in_ch=4, out_ch=3, ch=64)
 
 A_layers = list(m for m in A.modules if isinstance(m, (old_nn.SpatialConvolution, old_nn.SpatialFullConvolution, old_nn.SpatialDilatedConvolution, old_nn.SpatialBatchNormalization)))
