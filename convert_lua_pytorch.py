@@ -17,8 +17,8 @@ for m1, m2 in zip(A_layers, B_layers):
         m2.weight.data.copy_(m1.weight)
         m2.bias.data.copy_(m1.bias)
     elif isinstance(m2, nn.BatchNorm2d):
-        m2.running_var.data.copy_(m1.running_var)
-        m2.running_mean.data.copy_(m1.running_mean)
+        m2.running_var.copy_(m1.running_var)
+        m2.running_mean.copy_(m1.running_mean)
         m2.weight.data.copy_(m1.weight)
         m2.bias.data.copy_(m1.bias)
 
